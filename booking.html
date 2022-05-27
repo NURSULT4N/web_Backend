@@ -1,0 +1,63 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="css/booking.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+
+    <div class="container mt-3">
+
+      <!--<nav>-->
+        <ul class="nav nav-tabs" role="tablist" id="Login_list">
+          <li class="navi-tem"><a href="#menu1" class="nav-link active" data-bs-toggle="tab">Login</a></li>
+          <li class="navi-tem"><a href="#menu2" class="nav-link" data-bs-toggle="tab" id="navbtn2">Regitration</a></li>
+        </ul>
+        <!--</nav>-->
+
+        <div class="container mt-3">
+
+          <div class="tab-content">
+            <div id="menu1" class="container tab-pane active">
+              <form class="form-signin" id="form1">
+                <a href="index.html"><img class="mb-4" src="img/booking/10.png" alt="" width="72" height="72"></a>
+                <h1 class="h3 mb-3 font-weight-normal">Enter</h1>
+
+                <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required><p id="emailValidator" class="paragraphValidator"></p>
+
+                <input type="password" name="password" class="form-control" onmouseover="this.type='text'"
+                onmouseout="this.type='password'" placeholder="password"><p id="passwordValidator" class="paragraphValidator"></p>
+
+                <input type="button" class="btn btn-primary" name="submit" onclick="signValid(document.getElementById('form1'))" value="Submit">
+              </form>
+            </div>
+
+
+            <div id="menu2" class="container tab-pane fade">
+              <form class="form-signin" id="form2">
+                <a href="index.html"><img class="mb-4" src="img/booking/10.png" alt="" width="72" height="72"></a>
+                <h1 class="h3 mb-3 font-weight-normal">Registration</h1>
+
+                <input type="text" name = "name" class="form-control" placeholder="Nickname" required autofocus><p id="nameValidatorReg" class="paragraphValidator"></p>  
+
+                <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required><p id="emailValidatorReg" class="paragraphValidator"></p>
+
+                <input type="password" name="password" class="form-control" onmouseover="this.type='text'"
+                onmouseout="this.type='password'" placeholder="password"><p id="passwordValidator1" class="paragraphValidator"></p>
+
+                <input type="password" name="repassword" class="form-control" onmouseover="this.type='text'"
+                onmouseout="this.type='password'" placeholder="repassword"><p id="passwordValidator2" class="paragraphValidator"></p>
+
+                <input type="button" class="btn btn-primary" name="submit" onclick="regValid(document.getElementById('form2'))" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/make_appointment.js"></script>
+      </body>
+      </html>

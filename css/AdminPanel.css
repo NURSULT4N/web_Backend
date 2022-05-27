@@ -1,0 +1,25 @@
+.alert {
+    padding: 20px;
+    background-color: green;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Крестик */
+.closebtn {
+    margin-left: 15px;
+    color: black;
+    font-weight: bold;
+    float: right;
+    font-size: 26px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: red;
+}
+button{
+    margin-bottom: 10px;
+}
